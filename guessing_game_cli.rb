@@ -22,7 +22,11 @@ def run_guessing_game
   # compare   # respond
   case input
     when input == goal
-      
+      puts "You guessed the correct number!"
+    when input == "exit"
+      puts "Goodbye!"
+    else
+      puts 
   
 end
 
