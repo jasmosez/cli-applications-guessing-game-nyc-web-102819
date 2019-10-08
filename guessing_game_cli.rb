@@ -21,21 +21,22 @@ def capture_input
   input = gets.chomp
 end
 
+def compare(goal, input)
+  case input
+    when goal
+      puts "You guessed the correct number!"
+    when "exit"
+      puts "Goodbye!"
+    else
+      puts "Sorry! The computer guessed #{goal}."
+  end
+end
 
 def run_guessing_game
 #  numbers = generate_number
   goal = generate_goal
 #  prompt_user(numbers)
   input = capture_input
-  
-  # compare   # respond
-  case input
-    when numbers[:goal]
-      puts "You guessed the correct number!"
-    when "exit"
-      puts "Goodbye!"
-    else
-      puts "Sorry! The computer guessed #{numbers[:goal]}."
-  end
+  compare(goal, input)
 end
 
