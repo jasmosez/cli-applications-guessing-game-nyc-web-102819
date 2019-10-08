@@ -13,7 +13,7 @@ def run_guessing_game
   prompt_user
   
   # capture_input 
-  input = gets
+  input = gets.chomp
   
   compare
   
