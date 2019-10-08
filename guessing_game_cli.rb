@@ -1,5 +1,5 @@
 def generate_goal
-  rand(1..6)
+  rand(6) + 1
 end
 
 # def generate_number
