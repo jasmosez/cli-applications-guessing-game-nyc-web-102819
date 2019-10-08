@@ -26,9 +26,9 @@ def run_guessing_game
   
   # compare   # respond
   case input
-    when input == numbers[:goal]
+    when numbers[:goal]
       puts "You guessed the correct number!"
-    when input == "exit"
+    when "exit"
       puts "Goodbye!"
     else
       puts "Sorry! The computer guessed #{numbers[:goal]}."
