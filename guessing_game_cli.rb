@@ -1,24 +1,37 @@
-def run_guessing_game
-  # generate_number
+def generate_number
   lower = 1
   upper = 6
   
-  goal = rand(lower..upper)
+  numbers = {
+    :goal => rand(lower..upper),
+    :lower => lower,
+    :upper => upper
+  }
   
-  # prompt_user
-  puts "Guess a number between #{lower} and #{upper}."
-  
-  # capture_input 
+end
+
+def prompt_user(numbers)
+  puts "Guess a number between #{numbers[:lower]} and #{numbers[:upper]}."
+end
+
+def capture_input 
   input = gets.chomp
+end
+
+
+def run_guessing_game
+  numbers = generate_number
+  prompt_user(numbers)
+  input = capture_input
   
   # compare   # respond
   case input
-    when input == goal
+    when input == numbers[:goal]
       puts "You guessed the correct number!"
     when input == "exit"
       puts "Goodbye!"
     else
-      puts "Sorry! The computer guessed #{goal}."
+      puts "Sorry! The computer guessed #{numbers[:goal]}."
   end
 end
 
