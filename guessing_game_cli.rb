@@ -4,17 +4,6 @@ def generate_goal
   rand(6) + 1
 end
 
-# def generate_number
-#  lower = 1
-#  upper = 6
-#  
-#  numbers = {
-#    :goal => rand(lower..upper),
-#    :lower => lower,
-#    :upper => upper
-#  }
-# end
-
 def prompt_user(numbers)
   puts "Guess a number between #{numbers[:lower]} and #{numbers[:upper]}."
 end
@@ -36,7 +25,6 @@ def compare(goal, input)
 end
 
 def run_guessing_game
-#  numbers = generate_number
   goal = generate_goal
 #  prompt_user(numbers)
   input = capture_input
