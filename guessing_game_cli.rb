@@ -23,6 +23,8 @@ end
 
 def run_guessing_game
   goal = generate_goal
+  puts goal
+  bin
   input = capture_input
   compare(goal, input)
 end
