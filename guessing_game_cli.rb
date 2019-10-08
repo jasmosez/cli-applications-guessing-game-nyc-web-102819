@@ -22,6 +22,7 @@ def capture_input
 end
 
 def compare(goal, input)
+  binding.pry
   case input
     when goal
       puts "You guessed the correct number!"
