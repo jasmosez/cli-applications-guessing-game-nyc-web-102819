@@ -10,7 +10,6 @@ def capture_input
 end
 
 def compare(goal, input)
-  binding.pry
   case input
     when goal
       puts "You guessed the correct number!"
@@ -23,7 +22,6 @@ end
 
 def run_guessing_game
   goal = generate_goal.to_s
-  binding.pry
   input = capture_input
   compare(goal, input)
 end
