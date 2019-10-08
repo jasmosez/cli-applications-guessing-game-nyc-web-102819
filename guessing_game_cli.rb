@@ -1,4 +1,4 @@
-require pry
+require "pry"
 
 def generate_goal
   rand(6) + 1
