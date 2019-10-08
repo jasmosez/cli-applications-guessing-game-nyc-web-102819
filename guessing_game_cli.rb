@@ -1,11 +1,3 @@
-rand(1..6)
-
-
-
-
-
-
-
 def run_guessing_game
   # generate_number
   lower = 1
@@ -26,7 +18,6 @@ def run_guessing_game
     when input == "exit"
       puts "Goodbye!"
     else
-      puts 
-  
+      puts "Sorry! The computer guessed #{goal}."
 end
 
