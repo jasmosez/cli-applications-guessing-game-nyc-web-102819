@@ -11,7 +11,7 @@ def generate_number
 end
 
 def prompt_user(numbers)
-  puts "Guess a number between #{numbers[:lower]} and #{numbers[:upper]}."
+#  puts "Guess a number between #{numbers[:lower]} and #{numbers[:upper]}."
 end
 
 def capture_input 
