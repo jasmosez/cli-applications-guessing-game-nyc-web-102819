@@ -22,7 +22,7 @@ def compare(goal, input)
 end
 
 def run_guessing_game
-  goal = generate_goal
+  goal = generate_goal.to_s
   binding.pry
   input = capture_input
   compare(goal, input)
